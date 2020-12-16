@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+      #error{
+        font-size: medium;
+      }
+    </style>
+</head>
+<body background="/images/r.jpeg">
+    <header class="loghead">
+        <h1>Login</h1>
+    </header>
+    
+
+<div class="form">
+<!-- form start -->
+    <form action="#" onsubmit="return validate()"  class="mish" > 
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email</label>
+          <br>
+          <input type="text" class="form-control" id="email" aria-describedby="emailHelp">
+          <br>
+          <label id="error" for="error"></label>
+          <!-- <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small> -->  
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <br>
+          <input type="password" class="form-control" id="pwd">
+        </div>
+        <br>
+        <div class="form-group form-check">
+          <input type="checkbox" class="form-check-input" id="exampleCheck1">
+          <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+        </div>
+        <br>
+         <button id="submit" >Submit</button>  
+          
+      </form>
+      <!-- form end -->
+    </div>
+
+    <script src="/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/style.css">
+ 
+  
+    <style>
+      #pwderror{
+        color: red;
+      }
+    </style>
+</head>
+
+<body background="/images/sky.jpeg">
+    <header class="signhead"> 
+        <h1>Sign Up!</h1>
+    </header> -->
+
+<!-- signup form -->
+    <div class="signupform">
+    <form class="signbox" action="#" onsubmit="return signvalidate()"  >
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">Email</label>
+            <br> 
+            <input type="text" id="email4"   > 
+            <br>
+            <br>
+            <label id="emailerr" for="emailerr"></label>
+          </div>
+          <br>
+          <div class="form-group col-md-6">
+            <label for="inputPassword4">Password</label>
+            <br>
+            <div class="field">
+            <input type="password"  id="inputpwd"   pattern="(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required onkeyup="checkPass(); return false;" />
+            
+  </div>
+            <br>
+            <label id="pwderror" for="pwderror"></label>
+          </div>
+          <br>
+        </div>
+        <div class="form-group">
+          <label for="password">Confirm Password</label>
+          <br>
+          <input type="password"  id="password" placeholder="confirm password" onkeyup="checkPass(); return false;" />
+        </div>
+        <br>
+        <div class="form-group">
+          <label for="inputAddress2">Address 1</label>
+          <br>
+          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+        </div>
+        <br>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputCity">City</label>
+            <br>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <br>
+          <div class="form-group col-md-4">
+            <label for="inputState">State</label>
+            <br>
+            <select id="inputState" class="form-control">
+        
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <br>
+          <div class="form-group col-md-2">
+            <label for="phn">Phone No.</label>
+            <br>
+            <input type="text"  id="q">
+          </div>
+          <br>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck">
+            <label class="form-check-label" for="gridCheck">
+              Check me out!
+              
+            </label>
+          </div>
+          <br>
+        </div>
+        <button id="submit" onclick="return phonenumber()" >Sign in</button>
+      </form>
+    </div> 
+    <!-- signup form -->
+    
+
+     <script src="/script.js"></script>
+
+  
+
+</body>
+</html> 
+
